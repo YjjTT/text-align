@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文字两端自动对齐</title>
+	<style>
+		span{
+			border: 1px solid red;
+			display: inline-block;
+			width: 4em;
+			text-align: justify;
+			line-height: 20px;
+			height: 20px;
+			overflow: hidden;
+		}
+		span::after{
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<span>姓名</span> <br>
+	<span>联系方式</span>
+</body>
+</html>
